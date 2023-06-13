@@ -2,9 +2,11 @@
 <html lang="fr">
 
 <head>
+	<meta name="description"
+		content="Nina Carducci photographe à son compte, vous présente ses projets et ses services." />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Nina Carducci</title>
-	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
+	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="./assets/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +16,7 @@
 	<meta charset="UTF-8">
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
 		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
-	<script src="./assets/bootstrap/bootstrap.bundle.js" defer></script>
+	<script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
 	<script src="./assets/maugallery.js" defer></script>
 	<script src="./assets/scripts.js" defer></script>
 
@@ -28,16 +30,16 @@
 			<h1 class="name">Nina Carducci</h1>
 			<nav class="nav">
 				<ul>
-					<li><a href="#about">À propos</a></li>
-					<li><a href="#gallery">Galerie</a></li>
-					<li><a href="#services">Service</a></li>
-					<li><a href="#contact">Contact</a></li>
+					<li><a href="#about" aria-label="lien à propos de Nina Carducci">À propos</a></li>
+					<li><a href="#gallery" aria-label="galerie photos">Galerie</a></li>
+					<li><a href="#services" aria-label="services">Service</a></li>
+					<li><a href="#contact" aria-label="demande de contact">Contact</a></li>
 					<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
-							target="_blank"><img src="assets/images/instagram.png" alt=""></a></li>
+							target="_blank" aria-label="lien instagram"><img src="assets/images/instagram.png"
+								alt="logo instagram"></a></li>
 				</ul>
 			</nav>
 		</div>
-
 
 		<div id="header">
 
@@ -79,7 +81,8 @@
 	</header>
 
 	<main>
-		<div id="about">
+
+		<section id="about">
 			<div class="picture left">
 				<img src="./assets/images/nina.webp" alt="portrait de nina carducci">
 			</div>
@@ -99,7 +102,7 @@
 					la
 					tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 			</div>
-		</div>
+		</section>
 
 		<section id="gallery">
 			<h2 class="title">Portfolio</h2>
@@ -107,41 +110,41 @@
 				<div class="gallery" style="display: none">
 					<img data-gallery-tag="Concert" class="gallery-item"
 						src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp"
-						alt="salle de concert">
+						alt="salle de concert" loading="lazy">
 					<img data-gallery-tag="Entreprises" class="gallery-item"
 						src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp"
-						alt="homme en costume croisant les bras">
+						alt="homme en costume croisant les bras" loading="lazy">
 					<img data-gallery-tag="Entreprises" class="gallery-item"
 						src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp"
-						alt="photo de deux femmes qui sourient">
+						alt="photo de deux femmes qui sourient" loading="lazy">
 					<img data-gallery-tag="Mariages" class="gallery-item"
 						src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp"
-						alt="photo de mains">
+						alt="photo de mains" loading="lazy">
 					<img data-gallery-tag="Portrait" class="gallery-item"
 						src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp"
-						alt="portrait d'une personne qui ferme les yeux eblouie par le soleil">
+						alt="portrait d'une personne qui ferme les yeux eblouie par le soleil" loading="lazy">
 					<img data-gallery-tag="Mariages" class="gallery-item"
 						src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp"
-						alt="photo d'un jeune couple marié devant un palmier">
+						alt="photo d'un jeune couple marié devant un palmier" loading="lazy">
 					<img data-gallery-tag="Portrait" class="gallery-item"
 						src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp"
-						alt="portrait d'une jeune fille">
+						alt="portrait d'une jeune fille" loading="lazy">
 					<img data-gallery-tag="Concert" class="gallery-item"
 						src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp"
-						alt="photo d'un chanteur en concert">
+						alt="photo d'un chanteur en concert" loading="lazy">
 					<img data-gallery-tag="Entreprises" class="gallery-item"
 						src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp"
-						alt="photo d'une femme souriante devant son pc">
+						alt="photo d'une femme souriante devant son pc" loading="lazy">
 				</div>
 			</div>
 			<div class="quote">
 				<figure>
 					<blockquote>
-						<h1 class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un
+						<p class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un
 							fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude
 							n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la
 							vérité.
-						</h1>
+						</p>
 					</blockquote>
 					<figcaption class="quote__author">- Richard Avedon</figcaption>
 				</figure>
@@ -150,6 +153,7 @@
 
 		<section id="services">
 			<h2 class="title">Mes services</h2>
+
 			<div class="container">
 				<div class="service">
 					<div class="service__description">
@@ -162,8 +166,8 @@
 						<h4>350€/demi journée</h4>
 						<span>Matériel, déplacement inclus</span>
 					</div>
-
 				</div>
+
 				<div class="service">
 					<div class="service__description">
 						<h3>Retouches</h3>
@@ -175,6 +179,7 @@
 						<span>2 AR par photo</span>
 					</div>
 				</div>
+
 				<div class="service">
 					<div class="service__description">
 						<h3>Album photos</h3>
@@ -190,40 +195,39 @@
 			</div>
 		</section>
 
-		<div class="quote">
+		<section class="quote">
 			<figure>
 				<blockquote>
-					<h1 class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des
-						traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</h1>
+					<p class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des
+						traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</p>
 				</blockquote>
 				<figcaption class="quote__author">- Richard Avedon</figcaption>
 			</figure>
-		</div>
+		</section>
 
 	</main>
 
-	<footer>
-		<div id="contact">
-			<div class="container">
-				<div class="form-container">
-					<h3>Une question ? Une demande de devis ?</h3>
-					<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
-					<form action="#" method="post">
-						<label for="nom">Nom</label>
-						<input type="text" name="nom" id="nom">
-						<label for="email">Email</label>
-						<input type="email" name="email" id="email">
-						<label for="message">Message</label>
-						<textarea name="message" id="message" cols="30" rows="10"></textarea>
-						<input type="submit" value="Envoyer">
-					</form>
-				</div>
-				<div class="picture right">
-					<img src="./assets/images/camera.webp" alt="appareil photo">
-				</div>
+	<footer id="contact">
+		<div class="container">
+			<div class="form-container">
+				<h2>Une question ? Une demande de devis ?</h2>
+				<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
+				<form action="#" method="post">
+					<label for="nom">Nom</label>
+					<input type="text" name="nom" id="nom">
+					<label for="email">Email</label>
+					<input type="email" name="email" id="email">
+					<label for="message">Message</label>
+					<textarea name="message" id="message" cols="30" rows="10"></textarea>
+					<input type="submit" value="Envoyer">
+				</form>
+			</div>
+			<div class="picture right">
+				<img src="./assets/images/camera.webp" alt="appareil photo" loading="lazy">
 			</div>
 		</div>
 	</footer>
+
 </body>
 
 </html>
