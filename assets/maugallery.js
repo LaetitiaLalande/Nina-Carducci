@@ -153,12 +153,10 @@
 
       $(imagesCollection).each(function (i) {
         if ($(activeImage).attr("src") === $(this).attr("src")) {
-          index = i;
+          index = i - 1; // selection de l'image du tableau imagescollection - 1 ( image précédente de celle selectionnée)
         }
       });
-      next =
-        imagesCollection[index] ||
-        imagesCollection[imagesCollection.length - 1];
+      next = imagesCollection[index] || imagesCollection[imagesCollection.length - 1];
       $(".lightboxImage").attr("src", $(next).attr("src"));
     },
 
@@ -190,7 +188,7 @@
 
       $(imagesCollection).each(function (i) {
         if ($(activeImage).attr("src") === $(this).attr("src")) {
-          index = i;
+          index = i + 1; // selection de l'image du tableau imagescollection + 1 ( image suivante de celle selectionnée)
         }
       });
       next = imagesCollection[index] || imagesCollection[0];
