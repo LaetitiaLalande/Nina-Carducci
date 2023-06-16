@@ -2,20 +2,42 @@
 <html lang="fr">
 
 <head>
-	<meta name="description"
-		content="Nina Carducci photographe à son compte, vous présente ses projets et ses services." />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Nina Carducci</title>
+	<title>Nina Carducci Photographe</title>
+	<meta name="description"
+		content="Nina Carducci, photographe en Ile de France, capture pour vous les plus beaux moments de votre mariage ou tout autre événement ( entreprise, concert...)." />
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="./assets/style.min.css">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<meta charset="UTF-8">
-	<script defer src="https://code.jquery.com/jquery-3.4.1.min.js"
-		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
-		</script>
-	<script defer src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
-	<script defer src="./assets/maugallery.min.js"></script>
-	<script defer src="./assets/scripts.min.js"></script>
+	<!-- meta Open Graph pour instagram -->
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://laetitialalande.github.io/nina-carducci" />
+	<meta property="og:title" content="Nina Carducci Photo" />
+	<meta property="og:description"
+		content="Nina Carducci, photographe en Ile de France, capture pour vous les plus beaux moments de votre mariage ou tout autre événement ( entreprise, concert...)." />
+	<meta property="og:image" content="./assets/images/nina.webp" />
+	<meta property="og:site_name" content="Nina Carducci Photographe">
+	<!-- reférencement local avce schema.org -->
+	<script type="application/ld+json">
+		{
+		  "@context": "https://schema.org",
+		  "@type": "LocalBusiness",
+		  "address": {
+			  "@type": "PostalAddress",
+			  "streetAddress": "68 avenue Alsace-Lorraine",
+			  "addressLocality": "Bordeaux",
+			  "postalCode": "33200",
+			  "addressRegion": "Nouvelle-Aquitaine",
+			  "addressCountry": "FR"
+			},
+			"name": "Nina Carducci",
+	  		"openingHours": [
+			"Par téléphone du lundi au vendredi de 10h à 19h"
+			],
+		  "telephone": "05 56 67 78 89",
+		  "url" : "https://laetitialalande.github.io/nina-carducci"
+		}
+	</script>
 </head>
 
 <body>
@@ -34,9 +56,10 @@
 				</ul>
 			</nav>
 		</div>
+	</header>
 
-		<div id="header">
-
+	<main>
+		<section id="header">
 			<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 				<div class="carousel-indicators">
 					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
@@ -51,16 +74,17 @@
 						<img width="100%" height="100%"
 							src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp,
 							 ./assets/images/slider/ryoji-iwata-mobile.webp 800w" class="d-block w-100"
-							alt="homme qui traverse passage pieton">
+							alt="photo d'un homme qui traverse un passage pieton">
 					</div>
 					<div class="carousel-item">
 						<img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp" srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp,
-							 ./assets/images/slider/nicholas-green-mobile.webp 800w" class="d-block w-100" alt="foule qui danse">
+							 ./assets/images/slider/nicholas-green-mobile.webp 800w" class="d-block w-100" alt="photo d'une foule qui danse"
+							loading="lazy">
 					</div>
 					<div class="carousel-item">
 						<img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp" srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp,
 							 ./assets/images/slider/edward-cisneros-mobile.webp 800w" class="d-block w-100"
-							alt="mariés qui s'embrassent sur piste de danse">
+							alt="photo de mariés qui s'embrassent sur piste de danse" loading="lazy">
 					</div>
 				</div>
 				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -74,15 +98,13 @@
 					<span class="visually-hidden">Next</span>
 				</button>
 			</div>
-		</div>
-	</header>
+		</section>
 
-	<main>
 		<section id="about">
 			<div class="picture left">
 				<img width="100%" height="100%" src="./assets/images/nina.webp"
 					srcset="./assets/images/nina.webp, ./assets/images/nina-mobile.webp 420w"
-					alt="portrait de nina carducci">
+					alt="photo de Nina Carducci">
 			</div>
 			<div id="about-me">
 				<h2 class="about-me__title">A propos de moi</h2>
@@ -108,11 +130,11 @@
 				<div class="gallery" style="display: none">
 					<img data-gallery-tag="Concert" class="gallery-item"
 						src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp"
-						alt="salle de concert" loading="lazy">
+						alt="photo d'une salle de concert" loading="lazy">
 					<img data-gallery-tag="Entreprises" class="gallery-item"
 						src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp"
 						srcset="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp, ./assets/images/gallery/entreprise/ali-morshedlou-mobile.webp 450w"
-						alt="homme en costume croisant les bras" loading="lazy">
+						alt="photo d'un homme en costume croisant les bras" loading="lazy">
 					<img data-gallery-tag="Entreprises" class="gallery-item"
 						src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp"
 						alt="photo de deux femmes qui sourient" loading="lazy">
@@ -222,12 +244,18 @@
 			</div>
 			<div class="picture right">
 				<img width="100%" height="100%" src="./assets/images/camera.webp"
-					srcset="./assets/images/camera.webp, ./assets/images/camera-mobile.webp 420w" alt="appareil photo"
-					loading="lazy">
+					srcset="./assets/images/camera.webp, ./assets/images/camera-mobile.webp 420w"
+					alt="photo d'un appareil photo" loading="lazy">
 			</div>
 		</div>
 	</footer>
 
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+		</script>
+	<script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
+	<script src="./assets/maugallery.min.js"></script>
+	<script src="./assets/scripts.min.js"></script>
 </body>
 
 </html>
