@@ -9,35 +9,21 @@
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="./assets/style.min.css">
 	<meta charset="UTF-8">
-	<!-- meta Open Graph pour instagram -->
+	<!-- meta Open Graph pour reseaux sociaux -->
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://laetitialalande.github.io/nina-carducci" />
-	<meta property="og:title" content="Nina Carducci Photo" />
+	<meta property="og:title" content="Nina Carducci Photographe freelance" />
 	<meta property="og:description"
 		content="Nina Carducci, photographe en Ile de France, capture pour vous les plus beaux moments de votre mariage ou tout autre événement ( entreprise, concert...)." />
-	<meta property="og:image" content="	https://laetitialalande.github.io/nina-carducci/assets/images/nina-meta.webp" />
+	<meta property="og:image" content="https://laetitialalande.github.io/nina-carducci/assets/images/nina.webp" />
 	<meta property="og:site_name" content="Nina Carducci Photographe">
-	<!-- reférencement local avce schema.org -->
-	<script type="application/ld+json">
-		{
-		  "@context": "https://schema.org",
-		  "@type": "LocalBusiness",
-		  "address": {
-			  "@type": "PostalAddress",
-			  "streetAddress": "68 avenue Alsace-Lorraine",
-			  "addressLocality": "Bordeaux",
-			  "postalCode": "33200",
-			  "addressRegion": "Nouvelle-Aquitaine",
-			  "addressCountry": "FR"
-			},
-			"name": "Nina Carducci",
-	  		"openingHours": [
-			"Par téléphone du lundi au vendredi de 10h à 19h"
-			],
-		  "telephone": "05 56 67 78 89",
-		  "url" : "https://laetitialalande.github.io/nina-carducci"
-		}
-	</script>
+	<!-- meta Twitter -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Nina Carducci Photographe freelance" />
+	<meta name="twitter:description"
+		content="Nina Carducci, photographe en Ile de France, capture pour vous les plus beaux moments de votre mariage ou tout autre événement ( entreprise, concert...)." />
+	<meta name="twitter:image" content="https://laetitialalande.github.io/nina-carducci/assets/images/nina.webp" />
+	<meta name="twitter:site" content="https://laetitialalande.github.io/nina-carducci" />
 </head>
 
 <body>
@@ -249,6 +235,31 @@
 			</div>
 		</div>
 	</footer>
+
+	<!-- reférencement local avec schema.org -->
+	<script type="application/ld+json">
+		{
+		  "@context": "https://schema.org",
+		  "name": "Nina Carducci",
+		  "description": "Photographe freelance en Ile de France",
+		  "url" : "https://laetitialalande.github.io/nina-carducci",
+		  "image": "./assets/images/nina.webp",
+		  "@type": [
+		  "LocalBusiness",
+		  "Service"
+		  ],
+		  "address": {
+			  "@type": "PostalAddress",
+			  "streetAddress": "68 avenue Alsace-Lorraine",
+			  "addressLocality": "Bordeaux",
+			  "postalCode": "33200",
+			  "addressRegion": "Nouvelle-Aquitaine",
+			  "addressCountry": "FR"
+			},
+	  		"openingHours": "Mo,Fr 10:00-19:00",
+		  "telephone": "05 56 67 78 89"
+		}
+	</script>
 
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
 		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
